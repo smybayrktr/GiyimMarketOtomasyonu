@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DF61D12-628D-4CDA-BC6D-CED4DDDF5974}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicaretOtomasyonu</RootNamespace>
+    <AssemblyName>TicaretOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayakkabi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayakkabi.Designer.cs">
+      <DependentUpon>Ayakkabi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bileklik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bileklik.Designer.cs">
+      <DependentUpon>Bileklik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bluz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bluz.Designer.cs">
+      <DependentUpon>Bluz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolPantolon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolPantolon.Designer.cs">
+      <DependentUpon>BolPantolon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Canta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canta.Designer.cs">
+      <DependentUpon>Canta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ceket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceket.Designer.cs">
+      <DependentUpon>Ceket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ProductDal.cs" />
+    <Compile Include="Classes\Veritabani.cs" />
+    <Compile Include="Classes\Ürün.cs" />
+    <Compile Include="Classes\Ürünler.cs" />
+    <Compile Include="Classes\Üye.cs" />
+    <Compile Include="DarPaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarPaca.Designer.cs">
+      <DependentUpon>DarPaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbETicaretDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbETicaretDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etek.Designer.cs">
+      <DependentUpon>Etek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gömlek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gömlek.Designer.cs">
+      <DependentUpon>Gömlek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hirka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hirka.Designer.cs">
+      <DependentUpon>Hirka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kaban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kaban.Designer.cs">
+      <DependentUpon>Kaban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kap.Designer.cs">
+      <DependentUpon>Kap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Küpe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Küpe.Designer.cs">
+      <DependentUpon>Küpe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mont.Designer.cs">
+      <DependentUpon>Mont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantolon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantolon.Designer.cs">
+      <DependentUpon>Pantolon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkrani.Designer.cs">
+      <DependentUpon>PersonelEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGirisEkrani.Designer.cs">
+      <DependentUpon>PersonelGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Saat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saat.Designer.cs">
+      <DependentUpon>Saat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepet.Designer.cs">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisEkrani.Designer.cs">
+      <DependentUpon>SiparisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SweatShirt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SweatShirt.Designer.cs">
+      <DependentUpon>SweatShirt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tshirt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tshirt.Designer.cs">
+      <DependentUpon>Tshirt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tunik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tunik.Designer.cs">
+      <DependentUpon>Tunik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yelek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yelek.Designer.cs">
+      <DependentUpon>Yelek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünEkle.Designer.cs">
+      <DependentUpon>ÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünGüncelle.Designer.cs">
+      <DependentUpon>ÜrünGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünSil.Designer.cs">
+      <DependentUpon>ÜrünSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeEkrani.Designer.cs">
+      <DependentUpon>ÜyeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeGirisEkrani.Designer.cs">
+      <DependentUpon>ÜyeGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeGüncelle.Designer.cs">
+      <DependentUpon>ÜyeGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeliktenAyril.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeliktenAyril.Designer.cs">
+      <DependentUpon>ÜyeliktenAyril.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeOlEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeOlEkrani.Designer.cs">
+      <DependentUpon>ÜyeOlEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İndirimSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İndirimSayfasi.Designer.cs">
+      <DependentUpon>İndirimSayfasi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayakkabi.resx">
+      <DependentUpon>Ayakkabi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bileklik.resx">
+      <DependentUpon>Bileklik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bluz.resx">
+      <DependentUpon>Bluz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolPantolon.resx">
+      <DependentUpon>BolPantolon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canta.resx">
+      <DependentUpon>Canta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceket.resx">
+      <DependentUpon>Ceket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarPaca.resx">
+      <DependentUpon>DarPaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etek.resx">
+      <DependentUpon>Etek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gömlek.resx">
+      <DependentUpon>Gömlek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hirka.resx">
+      <DependentUpon>Hirka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kaban.resx">
+      <DependentUpon>Kaban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kap.resx">
+      <DependentUpon>Kap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Küpe.resx">
+      <DependentUpon>Küpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mont.resx">
+      <DependentUpon>Mont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantolon.resx">
+      <DependentUpon>Pantolon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkrani.resx">
+      <DependentUpon>PersonelEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGirisEkrani.resx">
+      <DependentUpon>PersonelGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Saat.resx">
+      <DependentUpon>Saat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sepet.resx">
+      <DependentUpon>Sepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisEkrani.resx">
+      <DependentUpon>SiparisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SweatShirt.resx">
+      <DependentUpon>SweatShirt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tshirt.resx">
+      <DependentUpon>Tshirt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tunik.resx">
+      <DependentUpon>Tunik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yelek.resx">
+      <DependentUpon>Yelek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünEkle.resx">
+      <DependentUpon>ÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünGüncelle.resx">
+      <DependentUpon>ÜrünGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünSil.resx">
+      <DependentUpon>ÜrünSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeEkrani.resx">
+      <DependentUpon>ÜyeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeGirisEkrani.resx">
+      <DependentUpon>ÜyeGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeGüncelle.resx">
+      <DependentUpon>ÜyeGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeliktenAyril.resx">
+      <DependentUpon>ÜyeliktenAyril.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeOlEkrani.resx">
+      <DependentUpon>ÜyeOlEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İndirimSayfasi.resx">
+      <DependentUpon>İndirimSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DbETicaretDataSet.xsc">
+      <DependentUpon>DbETicaretDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbETicaretDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbETicaretDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbETicaretDataSet.xss">
+      <DependentUpon>DbETicaretDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kahverengi-ve-sari-duvar-kagidi-2560x1600-29957_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape-form-background-connections-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K945211R0001VTE0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\374fc82add40502a1f44f9ef183e8786.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee68ee2fa53dc5f369f5977f5122bd62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdf1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayakkabı1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayakkabı11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayakkabı2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asasasas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaaaaaaaaaaaaaaaaaaaaaaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qqqqqqqqqqq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wwwwwwwwwww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeeeeeeeeee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rrrrrrrrrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccccc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccccccccccccccccccccc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vvvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnnnnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ökkkkkkkkkkkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şşşşşşşş.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cç.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxxxxxxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iiiiiiiiiiii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cccccccccccc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddddd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ppp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tttttttttttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cvf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdfgbhngfdsa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdfgbhngfdsa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ed815b1df89a50ebe331500e2cff0c8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f9e277767715730d50848270fab3662.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
